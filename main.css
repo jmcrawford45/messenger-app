@@ -1,0 +1,17 @@
+/*
+Since CSS uses a global name space for classes we should use class names starting with
+main- here.
+*/
+.main-toolbar {
+	min-height: 75px;
+	layout: row;
+	layout-align: center center;
+}
+
+.main-toolbar-entry {
+	line-height: 75px;
+	padding: 5px;
+}
+.main-content-pane {
+	height: 100%;
+}

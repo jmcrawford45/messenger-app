@@ -1,0 +1,45 @@
+/*
+CSS for the login-register component
+
+Since CSS uses a global name space for classes we should use class names starting with
+login-register- here.
+*/
+
+.login-register-form {
+	background-color: lightgrey;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.login-register-header {
+	text-align: center;
+}
+.login-register-login {
+	text-align: center;
+}
+.login-register-button {
+	color: white;
+	background-color: blue;
+	min-width: 140px;
+	border-radius: 8px;
+}
+.login-register-success {
+	background-color: lime;
+	border: 2px solid green;
+	border-radius: 4px;
+	width: 300px;
+	min-height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+}
+
+.login-register-error {
+	background-color: pink;
+	border: 2px solid red;
+	border-radius: 4px;
+	width: 300px;
+	min-height: 50px;
+	line-height: 50px;
+	margin: 0 auto;
+}

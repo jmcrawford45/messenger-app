@@ -1,0 +1,23 @@
+/*
+CSS for the user-list component
+
+Since CSS uses a global name space for classes we should use class names starting with
+user-list- here.
+*/
+
+.user-list-link{
+	padding-left: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.user-list-result {
+	font-size: 2em;
+	width: 100%;
+	
+}
+.user-list-result:hover{background: goldenrod;}
+.user-list-container {
+	width: 100%;
+}
+.user-list-container tr:nth-child(even) {background: #eeeff2}
+.user-list-container tr:nth-child(odd) {background: #dfe1e7}

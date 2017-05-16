@@ -1,0 +1,25 @@
+<div class="login-register-form" layout-fill>
+	<div ng-if="registerView">
+		<h1 class="login-register-header">Create Account</h1>
+		<form class="login-register-login" name="registerForm">
+			<input type="text" ng-model="main.first_name" placeholder="First Name"/><br/>
+			<input type="text" ng-model="main.last_name" placeholder="Last Name"/><br/>
+			<input type="text" ng-model="main.login_name" placeholder="Login Name"/><br/>
+			<input type="password" ng-model="main.password" placeholder="Password"/><br/>
+			<input type="password" ng-model="main.passwordConfirm" placeholder="Confirm Password"/><br/>
+			<button ng-click="register()" class="login-register-button">Register Me</button><br/>
+			<button ng-click="viewSwap()" class="login-register-button">Return to Login</button>
+		</form>
+	</div>
+	<div ng-if="!registerView">
+		<h1 class="login-register-header">Login</h1>
+		<form class="login-register-login" name="loginForm">
+			<input type="text" ng-model="main.login_name" placeholder="Login Name"><br/>
+			<input type="password" ng-model="main.password" placeholder="Password"><br/>
+			<button ng-click="login()" class="login-register-button">Login</button><br/>
+			<button ng-click="viewSwap()" class="login-register-button">Create account</button>
+		</form>
+	</div>
+	<h3 class="login-register-error" ng-if="errorMsg !== undefined">{{errorMsg}}</h3>
+	<h3 class="login-register-success" ng-if="registerSuccess !== undefined">{{registerSuccess}}</h3>
+</div> 

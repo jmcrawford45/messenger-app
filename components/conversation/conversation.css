@@ -1,0 +1,32 @@
+ /*
+Since CSS uses a global name space for classes we should use class names starting with
+conversation- here.
+*/
+
+.conversation-type {
+	border-bottom: 2px lightgrey solid;
+	color: #29487d;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-left: 5px;
+}
+.conversation-info {
+	padding-bottom: 50px;
+	padding-left: 10px;
+}
+.conversation-link{
+	padding-left: 5px;
+	font-size: 1.2em;
+}
+
+.conversation-result {
+	font-size: 2em;
+	width: 100%;
+	
+}
+.conversation-result:hover{background: goldenrod;}
+.conversation-container {
+	width: 100%;
+}
+.conversation-container tr:nth-child(even) {background: #eeeff2}
+.conversation-container tr:nth-child(odd) {background: #dfe1e7}
